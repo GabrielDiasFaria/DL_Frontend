@@ -19,7 +19,7 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 {/* Página Inicial do Blog */}
-                <Route path="/" exact={true} component={Teste} />
+                <Route path="/" exact component={Teste} />
                 <Route path="/teste" component={Teste2} />
             </Switch>
         </BrowserRouter>
