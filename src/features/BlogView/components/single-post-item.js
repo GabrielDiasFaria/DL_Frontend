@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 import '../styles/style.css'
 import api from '../../../service/api'
 
-import p1 from '../../../assets/img/posts/p1.jpg'
-import a1 from '../../../assets/img/author/a1.png'
-
 export default function SinglePostItem() {
 
     const [articles, setArticles] = useState([])
@@ -26,7 +23,7 @@ export default function SinglePostItem() {
                     articles.map(line => (
                         <div className="single-post-item">
                             <figure>
-                                <img className="post-img img-fluid" src={p1} alt=""></img>
+                                <img className="post-img img-fluid" src={`${process.env.PUBLIC_URL}/assets/img/posts/p1.jpg`} alt=""></img>
                             </figure>
                             <h3>
                                 <Link to={`/blog/blogdetails/${line.id}`} className="">
@@ -39,7 +36,7 @@ export default function SinglePostItem() {
                                 <div className="d-flex">
                                     <div>
                                         <Link to={`/blog/blogdetails/${line.id}`}>
-                                            <img src={a1} alt=""></img>
+                                            <img src={`${process.env.PUBLIC_URL}/assets/img/author/a1.png`} alt=""></img>
                                         </Link>
                                     </div>
                                     <div className="post-meta">

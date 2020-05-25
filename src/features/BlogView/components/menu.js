@@ -5,8 +5,6 @@ import '../styles/style.css'
 import api from '../../../service/api'
 import Parser from 'html-react-parser'
 
-import logo from '../../../assets/img/Logo-Descomplicando-Linguagens.png'
-
 export default function MenuBlogView() {
 
     const [categories, setCategories] = useState("")
@@ -41,7 +39,7 @@ export default function MenuBlogView() {
             <div className="container box_1170 main-menu">
                 <div className="row align-items-center justify-content-between d-flex">
                     <div id="logo">
-                        <Link to="/blog"><img src={logo} width="55" height="55" alt="" title="" /></Link>
+                        <Link to="/blog"><img src={`${process.env.PUBLIC_URL}/assets/img/Logo-Descomplicando-Linguagens.png`} width="55" height="55" alt="" title="" /></Link>
                     </div>
                     <nav id="nav-menu-container">
                         <ul className="nav-menu">

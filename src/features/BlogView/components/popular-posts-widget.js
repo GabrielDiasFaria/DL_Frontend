@@ -2,8 +2,6 @@ import React from 'react';
 
 import '../styles/style.css'
 
-import r1 from '../../../assets/img/blog/r1.jpg'
-
 export default function PopularPostsWidget() {
     return (
         <div className="single-widget popular-posts-widget">
@@ -11,7 +9,7 @@ export default function PopularPostsWidget() {
             <div className="blog-list ">
                 <div className="single-popular-post d-flex flex-row">
                     <div className="popular-thumb">
-                        <img className="img-fluid" src={r1} alt=""></img>
+                        <img className="img-fluid" src={`${process.env.PUBLIC_URL}/assets/img/blog/r1.jpg`} alt=""></img>
                     </div>
                     <div className="popular-details">
                         <a href="/blog">

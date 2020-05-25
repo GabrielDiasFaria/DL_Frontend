@@ -2,12 +2,10 @@ import React from 'react';
 
 import '../styles/style.css'
 
-import user2 from '../../../assets/img/blog/user2.png'
-
 export default function PortifolioWidget() {
     return (
         <div className="single-widget protfolio-widget">
-            <img className="img-fluid" src={user2} alt=""></img>
+            <img className="img-fluid" src={`${process.env.PUBLIC_URL}/assets/img/blog/user2.png`} alt=""></img>
             <a href="/blog">
                 <h4>Gabriel Dias Faria</h4>
             </a>
