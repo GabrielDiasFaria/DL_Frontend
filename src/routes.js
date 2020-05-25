@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import BlogView from './features/BlogView/components'
+import BlogView from './features/BlogView/pages'
 
 export default function Routes() {
 
