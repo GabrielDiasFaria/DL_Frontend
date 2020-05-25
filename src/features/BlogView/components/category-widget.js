@@ -24,7 +24,7 @@ export default function CategoryWidget() {
                     categories.length > 0 ? (
                         categories.map(line => (
                             <li key={line.id}>
-                                <Link to={`/blog/blogcategory/${line.id}/${line.name}`} className="justify-content-between align-items-center d-flex">
+                                <Link to={`/blogcategory/${line.id}/${line.name}`} className="justify-content-between align-items-center d-flex">
                                     <p>{line.name}</p>
                                     <span>{line.id}</span>
                                 </Link>
@@ -32,7 +32,7 @@ export default function CategoryWidget() {
                         ))
                     ) : (
                             <li>
-                                <Link to="/blog" className="justify-content-between align-items-center d-flex">
+                                <Link to="/" className="justify-content-between align-items-center d-flex">
                                     <p>Não possui categoria cadastrada!</p>
                                 </Link>
                             </li>

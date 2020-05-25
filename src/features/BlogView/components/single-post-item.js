@@ -26,39 +26,39 @@ export default function SinglePostItem() {
                                 <img className="post-img img-fluid" src={`${process.env.PUBLIC_URL}/assets/img/posts/p1.jpg`} alt=""></img>
                             </figure>
                             <h3>
-                                <Link to={`/blog/blogdetails/${line.id}`} className="">
+                                <Link to={`/blogdetails/${line.id}`} className="">
                                     {line.name}
                                 </Link>
                             </h3>
                             <p>{line.description}</p>
-                            <Link to={`/blog/blogdetails/${line.id}`} className="primary-btn text-uppercase mt-15">Continuar lendo</Link>
+                            <Link to={`/blogdetails/${line.id}`} className="primary-btn text-uppercase mt-15">Continuar lendo</Link>
                             <div className="post-box">
                                 <div className="d-flex">
                                     <div>
-                                        <Link to={`/blog/blogdetails/${line.id}`}>
+                                        <Link to={`/blogdetails/${line.id}`}>
                                             <img src={`${process.env.PUBLIC_URL}/assets/img/author/a1.png`} alt=""></img>
                                         </Link>
                                     </div>
                                     <div className="post-meta">
                                         <div className="meta-head">
-                                            <Link to={`/blog/blogdetails/${line.id}`}>{line.author}</Link>
+                                            <Link to={`/blogdetails/${line.id}`}>{line.author}</Link>
                                         </div>
                                         <div className="meta-details">
                                             <ul>
                                                 <li>
-                                                    <Link to={`/blog/blogdetails/${line.id}`}>
+                                                    <Link to={`/blogdetails/${line.id}`}>
                                                         <span className="lnr lnr-calendar-full"></span>
                                                         0
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to={`/blog/blogdetails/${line.id}`}>
+                                                    <Link to={`/blogdetails/${line.id}`}>
                                                         <span className="lnr lnr-picture"></span>
                                                         {line.category}
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to={`/blog/blogdetails/${line.id}`}>
+                                                    <Link to={`/blogdetails/${line.id}`}>
                                                         <span className="lnr lnr-bubble"></span>
                                                         0 Comentários
                                                     </Link>

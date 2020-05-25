@@ -15,12 +15,12 @@ export default function MenuBlogView() {
             await api.get('categories/tree').then(response => {
                 response.data.forEach(header => {
 
-                    categoryHtml += `<li><a href="/blog/blogcategory/${header.id}/${header.name}">${header.name}</a>`
+                    categoryHtml += `<li><a href="//category/${header.id}/${header.name}">${header.name}</a>`
 
                     if (header.children.length > 0) {
                         categoryHtml += `<ul>`
                         header.children.forEach(child => {
-                            categoryHtml += `<li><a href="/blog/blogcategory/${child.id}/${child.name}">${child.name}</a></li>`
+                            categoryHtml += `<li><a href="//category/${child.id}/${child.name}">${child.name}</a></li>`
                         })
                         categoryHtml += `</ul>`
                     }
@@ -39,12 +39,12 @@ export default function MenuBlogView() {
             <div className="container box_1170 main-menu">
                 <div className="row align-items-center justify-content-between d-flex">
                     <div id="logo">
-                        <Link to="/blog"><img src={`${process.env.PUBLIC_URL}/assets/img/Logo-Descomplicando-Linguagens.png`} width="55" height="55" alt="" title="" /></Link>
+                        <Link to="/"><img src={`${process.env.PUBLIC_URL}/assets/img/Logo-Descomplicando-Linguagens.png`} width="55" height="55" alt="" title="" /></Link>
                     </div>
                     <nav id="nav-menu-container">
                         <ul className="nav-menu">
 
-                            <li><Link to="/blog">Categorias</Link>
+                            <li><Link to="/">Categorias</Link>
                                 <ul>
                                     {
                                         Parser(categories)
@@ -58,19 +58,19 @@ export default function MenuBlogView() {
                                 </ul>
                             </li>
                             {/* <li><a href="archive.html">Archive</a></li> */}
-                            {/* <li className="menu-has-children"><a href="/blog">Pages</a>
+                            {/* <li className="menu-has-children"><a href="/">Pages</a>
                                 <ul>
                                     <li><a href="elements.html">Elements</a></li>
                                 </ul>
                             </li> */}
-                            <li><Link to="/blog">Sobre</Link></li>
-                            {/* <li className="menu-has-children"><a href="/blog">Blog</a>
+                            <li><Link to="/">Sobre</Link></li>
+                            {/* <li className="menu-has-children"><a href="/">Blog</a>
                                 <ul>
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li> */}
-                            <li><Link to="/blog">Contato</Link></li>
-                            <li><Link to="/blog">Login</Link></li>
+                            <li><Link to="/">Contato</Link></li>
+                            <li><Link to="/">Login</Link></li>
                         </ul>
                     </nav>
                 </div>
