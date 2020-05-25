@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import BlogView from './features/BlogView/components'
+
 export default function Routes() {
 
     const Teste = () => {
@@ -19,7 +21,7 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 {/* Página Inicial do Blog */}
-                <Route path="/" exact={true} component={Teste} />
+                <Route path="/" exact={true} component={BlogView} />
                 <Route path="/teste" component={Teste2} />
             </Switch>
         </BrowserRouter>
